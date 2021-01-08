@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" type="text/css" href="a1css.css">
+    <script type="text/javascript" src="a1js.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <div class="email-card">
+            <div id="form-content">
+                <h1>Subscribe Now!</h3>
+                <div>
+                    Email address
+                </div>
+                <div style="flex-grow: 1;">
+                    <input oninput="validate()" type="text" id="email-text" class="input-box"/>
+                </div>
+                <div class="error-msg" id="err-txt">
+                    A valid email is required
+                </div>
+                <button class="subsribe-btn" onclick="trySubmit()">Subscribe</button>
+            </div>
+            <div class="success-message" id="success-message" style="display: none;">
+                <h3>Thank you</h4>
+                <p>Your subscription was a success!</p>
+            </div>
+        </div>
+    </div>
+</body>

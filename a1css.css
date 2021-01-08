@@ -1,0 +1,92 @@
+.page-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-container *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.email-card{
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    border-color: rgba(153, 153, 153,0.6);
+    border-radius: 13px;
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+}
+h1{
+    margin: 25px 0;
+    font-size: 26px !important;
+}
+input{
+    margin: 5px 0;
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(153, 153, 153,0.6);
+    border-style: solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input:focus{
+    box-shadow: 0 0 0 3px rgba(110, 185, 255, 0.3);
+    outline: none;
+    border-color: rgba(0, 132, 255, 0.5);
+}
+/* input:active{
+    box-shadow: 0 0 0 2px rgba(160, 217, 241,0.3);
+    outline: none;
+    border-color: rgba(94, 181, 216,0.6);
+} */
+.error-msg{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+button{
+    width:fit-content;
+    padding: 8px 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: rgba(7, 158, 27,0.9);
+    color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(7, 158, 27);
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 202, 0, 0.2);
+}
+.error{
+    border-color: red !important;
+    box-shadow: none;
+}
+.error:focus{
+    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.295);
+    outline: none;
+}
+.success-message{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-content: center;
+    background-color: rgba(1, 138, 1, 0.15);
+    border-radius: 5px;
+    border-color: rgba(1,138,1,0.1);
+    color: rgb(0, 80, 0);
+}
+.success-message > *{
+    margin-block-end: 5px;
+    margin-block-start: 0;
+}
